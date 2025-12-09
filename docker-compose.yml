@@ -7,7 +7,6 @@ services:
       dockerfile: Dockerfile
     container_name: pdfbox-backend
     ports:
-      # Host:Container - This exposes the backend to localhost:8080
       - "8080:8080"
     networks:
       - pdfapp_net
@@ -18,7 +17,6 @@ services:
       dockerfile: Dockerfile
     container_name: react-frontend
     ports:
-      # Host:Container - This exposes the frontend to localhost:3000
       - "3000:80"
     networks:
       - pdfapp_net
