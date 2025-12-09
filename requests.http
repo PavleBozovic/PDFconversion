@@ -1,0 +1,12 @@
+### Test Multi-Page PDF to ZIP Conversion Endpoint
+# URL: http://localhost:8081/api/convert/pdf-to-jpeg
+POST http://localhost:8081/api/convert/pdf-to-jpeg
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="sample.pdf"
+Content-Type: application/pdf
+
+< ./sample.pdf
+
+--WebAppBoundary--

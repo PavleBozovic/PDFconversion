@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pdfbox-backend
+    ports:
+      # Host:Container - This exposes the backend to localhost:8080
+      - "8080:8080"
+    networks:
+      - pdfapp_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: react-frontend
+    ports:
+      # Host:Container - This exposes the frontend to localhost:3000
+      - "3000:80"
+    networks:
+      - pdfapp_net
+
+networks:
+  pdfapp_net:
+    driver: bridge
