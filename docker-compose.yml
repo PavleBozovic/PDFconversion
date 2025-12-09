@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   backend:
     build:
@@ -17,6 +15,7 @@ services:
       dockerfile: Dockerfile
     container_name: react-frontend
     ports:
+
       - "3000:80"
     networks:
       - pdfapp_net
