@@ -31,3 +31,6 @@ The React application makes an API request to the backend container using the in
 ### Running the Application
 
 Navigate to the project root directory and execute the following single command to build the images and start both containers:
+
+```bash
+docker compose up --build -d
