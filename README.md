@@ -6,7 +6,7 @@ This is a robust full-stack application designed to convert multi-page PDF files
 
 | Component | Primary Technologies | Key Dependencies |
 | :--- | :--- | :--- |
-| **Backend** | Spring Boot (Java 21) | PDFBox (for conversion), Maven |
+| **Backend** | Spring Boot (Java 17) | PDFBox (for conversion), Maven |
 | **Frontend** | React (TypeScript) | Axios, Vite |
 | **Deployment** | Docker & Docker Compose | Nginx (for serving frontend) |
 
@@ -26,7 +26,7 @@ The React application makes an API request to the backend container using the in
 ### Prerequisites
 
 * Docker and Docker Compose installed.
-* (Optional: Java 21+ and Node 20+ if running services locally)
+* (Optional: Java 17+ and Node 20+ if running services locally)
 
 ### Running the Application
 
