@@ -2,6 +2,10 @@
 
 This is a robust full-stack application designed to convert multi-page PDF files into a downloadable ZIP archive containing a high-quality JPEG image for every page. The architecture is containerized using Docker Compose for simple deployment.
 
+<p align="center">
+  <img src="screenshot.png" width="600" alt="Application Screenshot">
+</p>
+
 ## 2. Technologies
 
 | Component | Primary Technologies | Key Dependencies |
