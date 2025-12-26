@@ -21,7 +21,7 @@ The application runs two primary services connected via a private Docker network
 1.  The **Frontend** (React/Nginx) is exposed on `localhost:3000`.
 2.  The **Backend** (Spring Boot) is exposed on `localhost:8080`.
 
-The React application makes an API request to the backend container using the internal service name `http://backend:8080`. This setup ensures smooth, container-to-container communication.
+The React application makes an API request to the backend container using the internal service name `http://backend:8080`. This setup ensures smooth, container to container communication.
 
 
 
